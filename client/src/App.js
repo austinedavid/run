@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import './App.css';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 
 // below is our styling
@@ -13,6 +14,7 @@ function App() {
   return (
     <Container>
       <Navbar/>
+      <Home/>
     </Container>
   );
 }
