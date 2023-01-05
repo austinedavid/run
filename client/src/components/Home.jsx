@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import bgPicture from '../images/home-bg.png'
-import Typical from 'react-typical'
+
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -148,11 +148,8 @@ const Home = () => {
     <div className='wrapper'>
       <div className='inner-wrapper'>
         <p className='bigger-text'>Hello there,</p>
-        <p className='sub-bigger'>I am Austine david, a passionate  <Typical
-        className="typer"
-        loop={Infinity}
-        steps={[" frontend developer", 10000, " backend developer", 10000, "fullstack developer", 10000]}
-        /></p>
+        <p className='sub-bigger'>I am Austine david, a passionate </p>
+        
         <p className='little-text'>thank you so much for visiting my world, I am actually very enthusiatic programmer, very friendly and understaning.
           <span>i will really appreciate if you get in touch with me, either as a client or looking for partnership</span>
         </p>
