@@ -144,7 +144,7 @@ const Testimony = () => {
   return (
     <Container page={page}>
         <div className='wrapper'>
-            <div className='heading'>Clients Testimony</div>
+            <div className='heading'>Testimonies</div>
             <div className='slide-container'>
                 <div className='slide-wrapper'>
                     <div className='slides'>
