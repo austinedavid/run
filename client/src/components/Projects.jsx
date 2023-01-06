@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import ShopTwoIcon from '@mui/icons-material/ShopTwo';
-import {Link} from "react-router-dom"
+
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -70,7 +69,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: MOBILE APP CLONED</h3>
                     <h4 className="vertical-title">Nature: <span>The project consist only of html, css and javascript</span></h4>
                     <p>
-                    check on the project: <a href='https://austinedavid.github.io/kuda/index.html' target="_blank">view project</a>
+                    check on the project: <a href='https://austinedavid.github.io/kuda/index.html' >view project</a>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -85,7 +84,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: ELITE TOURISM</h3>
                     <h4 className="vertical-title">Nature: <span>The project consist only of react, styled-component and javascript</span></h4>
                     <p>
-                    check on the project: <a href='https://austinedavid.github.io/tourism3' target="_blank">view project</a>
+                    check on the project: <a href='https://austinedavid.github.io/tourism3' >view project</a>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -100,7 +99,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: FLOKITE EXPLORE</h3>
                     <h4 className="vertical-title">Nature: <span>The project consist only of react, styled-component and javascript, nodejs, mongobd & together with full authentication. This is a fullstalk application</span></h4>
                     <p>
-                    check on the project: <a href='https://flowkite.netlify.app' target="_blank">view project</a>
+                    check on the project: <a href='https://flowkite.netlify.app' >view project</a>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -115,7 +114,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: AUSTINEGLOBALS</h3>
                     <h4 className="vertical-title">Nature: <span>This is an Ecomerce webapplication, created with react, styled-component and javascript, nodejs, mongobd & together with full authentication. This is a fullstalk application</span></h4>
                     <p>
-                    check on the project: <a href='https://austineglobal.netlify.app' target="_blank">view project</a>
+                    check on the project: <a href='https://austineglobal.netlify.app' >view project</a>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -130,7 +129,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: AUSTINEGLOBALS DASHBOARD</h3>
                     <h4 className="vertical-title">Nature: <span>Created a dashboard for uploading Ecormmerse items, used jwt authentication, react, expressjs and mongodb</span></h4>
                     <p>
-                    check on the project: <a href='https://laptopdashboard.netlify.app/' target="_blank">view project</a>
+                    check on the project: <a href='https://laptopdashboard.netlify.app/' >view project</a>
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -145,7 +144,7 @@ const Projects = () => {
                     <h3 className="vertical-heading">PROJECT: Gmodechatz</h3>
                     <h4 className="vertical-title">Nature: <span>Created a simple Chat application, created with react, reduxtoolkit, styled-component and javascript, nodejs, mongobd & together with full authentication. This is a fullstalk application</span></h4>
                     <p>
-                    check on the project: <a href='https://gmodechatz.netlify.app/' target="_blank">view project</a>
+                    check on the project: <a href='https://gmodechatz.netlify.app/'>view project</a>
                     </p>
                 </VerticalTimelineElement>
            </VerticalTimeline>
