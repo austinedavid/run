@@ -151,7 +151,7 @@ const Testimony = () => {
                         {myTestimony.map((each)=>(
                             <div className='slide' key={each.sn}>
                                 <div className='face'>
-                                    <img src={each.image}/>
+                                    <img src={each.image} alt="slidershow"/>
                                 </div>
                                 <div className='name'>
                                     <h3>{each.name}</h3>
