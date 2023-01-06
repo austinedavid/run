@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 // below is our styling
@@ -19,6 +20,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Projects/>
     </Container>
   );
 }
