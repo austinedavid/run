@@ -48,7 +48,7 @@ position: relative;
         font-weight: bold;
       }
       @media(max-width:400px){
-        font-size: 15px;
+        font-size: 17px;
         font-weight: bold;
         text-align: center;
       }
@@ -70,6 +70,7 @@ position: relative;
       @media(max-width:560px){
         font-size: 12px;
         font-weight: bold;
+        font-style: italic;
       }
 
      
