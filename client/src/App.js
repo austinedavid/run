@@ -3,6 +3,7 @@ import './App.css';
 import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Newsletter from './components/Newsletter';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Testimony from './components/Testimony';
@@ -23,6 +24,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Testimony/>
+      <Newsletter/>
     </Container>
   );
 }
