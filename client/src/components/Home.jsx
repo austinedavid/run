@@ -50,6 +50,7 @@ position: relative;
       @media(max-width:400px){
         font-size: 15px;
         font-weight: bold;
+        text-align: center;
       }
       @media(max-width:420px){
         font-size: 14px;
