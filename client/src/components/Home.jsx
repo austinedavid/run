@@ -148,7 +148,7 @@ const Home = () => {
     <div className='wrapper'>
       <div className='inner-wrapper'>
         <p className='bigger-text'>Hello there,</p>
-        <p className='sub-bigger'>I am Austine david, a passionate </p>
+        <p className='sub-bigger'>I am Austine david, a passionate fullstack developer</p>
         
         <p className='little-text'>thank you so much for visiting my world, I am actually very enthusiatic programmer, very friendly and understaning.
           <span>i will really appreciate if you get in touch with me, either as a client or looking for partnership</span>
