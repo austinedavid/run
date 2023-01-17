@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import myPhoto from '../images/myPic.jpg'
+import myPhoto from '../images/mypicture.jpg'
 import {motion} from 'framer-motion'
 
 // below is our jsx styling
@@ -40,17 +40,24 @@ const Container = styled.div`
             grid-template-columns: 1fr 1fr;
             margin-top: 3rem;
             flex-wrap: wrap;
+            align-items: center;
 
             @media(max-width: 560px){
                 grid-template-columns: 1fr;
             }
 
             .photo-div{
-                
+               height: 400px;
                 border-radius: 20px;
-                overflow: hidden;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
                 img{
-                    width: 100%;
+                    width: 70%;
+                    height: 100%;
+                    border-radius: 10px;
                 }
             }
             .about-div{
