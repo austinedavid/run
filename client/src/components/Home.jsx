@@ -8,6 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 // below is our styling for the jsx
 const Container = styled.div`
@@ -29,6 +30,7 @@ position: relative;
   color: white;
   padding: 10px;
 
+  
   .inner-wrapper{
     display: flex;
     flex-direction: column;
@@ -115,6 +117,11 @@ position: relative;
       transition: all 1s ease-in-out;
       transform: translateX(${(prop)=> prop.side?"0px": "-100%"});
 
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+
       &:hover{
         background-color: transparent;
       }
@@ -168,12 +175,14 @@ const Home = () => {
     {
       side && (
     <div className='social-media'>
-        <div className='social-subdiv'><p>connect through facebook</p><FacebookIcon style={{color: "blue"}}/></div>
-        <div className='social-subdiv'><p>connect through whatsApp</p><WhatsAppIcon style={{color: "green"}}/></div>
+        <a href='https://www.facebook.com/david.austine.3154'><div className='social-subdiv'><p>connect through facebook</p><FacebookIcon style={{color: "blue"}}/></div></a>
+        <a href='https://wa.me/2348145508195'><div className='social-subdiv'><p>connect through whatsApp</p><WhatsAppIcon style={{color: "green"}}/></div></a>
         <div className='social-subdiv'><p>connect through twitter</p><TwitterIcon style={{color: "blue"}}/></div>
         <div className='social-subdiv'><p>connect through linkedin</p><LinkedInIcon style={{color: "blue"}}/></div>
-        <div className='social-subdiv'><p>connect through instagram</p><InstagramIcon style={{color: "red"}}/></div>
+        <a href='https://www.instagram.com/gmodetech/'><div className='social-subdiv'><p>connect through instagram</p><InstagramIcon style={{color: "red"}}/></div></a>
         <div className='social-subdiv'><p>connect through telegram</p><TelegramIcon style={{color: "blue"}}/></div>
+        
+        <a href='https://github.com/austinedavid'><div className='social-subdiv'><p>connect through github</p><GitHubIcon style={{color: "gray"}}/></div></a>
         
     </div>
       )
