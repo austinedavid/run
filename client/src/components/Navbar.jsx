@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import styled from 'styled-components'
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
+import {nav} from '../utils/navbar'
 
 // below is our styling here
 const Container = styled.div`
@@ -10,7 +11,22 @@ background-color: black;
 position: fixed;
 top: 0;
 z-index: 999;
+a{
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
 
+  @media(max-width: 650px){
+        margin-left: 1rem;
+        font-size: 14px;
+        
+      }
+      @media(max-width: 560px){
+        margin-bottom: 2rem;
+        font-size: 20px;
+      }
+}
 .wrapper{
   max-width: 1000px;
   background-color: transparent;
@@ -52,10 +68,12 @@ z-index: 999;
      
     }
     p{
-      color: white;
+      color: inherit;
       margin-left: 2rem;
       font-size: 15px;
       cursor: pointer;
+      text-decoration: none;
+
 
       @media(max-width: 650px){
         margin-left: 1rem;
@@ -90,6 +108,19 @@ const Navbar = () => {
   const handleopen = ()=>{
     setopen(true)
   }
+  // here we add our scroll functionality
+  const handleClick = (e)=>{
+    e.preventDefault()
+    const element = e.target.getAttribute("href")
+    const location = document.querySelector(element).offsetTop
+    setopen(false)
+    // making use of window function to set the location of our divs
+    window.scrollTo({
+      left: 0,
+      top: location - 70
+    })
+
+  }
   return (
     <Container open={open}>
       <div className='wrapper'>
@@ -97,11 +128,9 @@ const Navbar = () => {
           <p className='big-header'>GmodeDev</p>
         </div>
         <div className='item-div'>
-          <p>HOME</p>
-          <p>ABOUT</p>
-          <p>SKILLS</p>
-          <p>PROJECTS</p>
-          <p>TESTIMONIES</p>
+         {nav.map((each)=>(
+          <a href={each.url} key={each.id} onClick={handleClick}>{each.link}</a>
+         ))}
         </div>
         <div className='toggle'>
           {open? <CloseIcon onClick={handleclose} style={{color: "white", cursor: "pointer"}}/> : <MenuIcon onClick={handleopen} style={{color: "white", cursor: "pointer"}}/> }

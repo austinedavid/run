@@ -102,6 +102,7 @@ const Container = styled.div`
 const Skills = () => {
   return (
     <Container>
+        <div id='skills'>
         <div className='wrapper'>
             <div className='heading-div'>
                 <p>My skills</p>
@@ -121,6 +122,7 @@ const Skills = () => {
                     ))
                 }
             </div>
+        </div>
         </div>
     </Container>
   )

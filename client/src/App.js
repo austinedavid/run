@@ -19,6 +19,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <div id='home'>
       <Navbar/>
       <Home/>
       <About/>
@@ -27,7 +28,9 @@ function App() {
       <Testimony/>
       <Newsletter/>
       <Footer/>
+      </div>
     </Container>
+    
   );
 }
 

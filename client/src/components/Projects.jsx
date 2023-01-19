@@ -52,6 +52,7 @@ const Container = styled.div`
 const Projects = () => {
   return (
     <Container>
+        <div id='projects'>
         <div className='wrapper'>
             <div className='heading-div'>
                 <p>MY PROJECTS</p>
@@ -148,6 +149,7 @@ const Projects = () => {
                     </p>
                 </VerticalTimelineElement>
            </VerticalTimeline>
+        </div>
         </div>
     </Container>
   

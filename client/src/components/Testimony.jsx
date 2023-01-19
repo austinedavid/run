@@ -143,6 +143,7 @@ const Testimony = () => {
     console.log(page)
   return (
     <Container page={page}>
+        <div id='testimony'>
         <div className='wrapper'>
             <div className='heading'>Testimonies</div>
             <div className='slide-container'>
@@ -172,6 +173,7 @@ const Testimony = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </Container>
   )
