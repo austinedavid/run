@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import bgPicture from '../images/home-bg.png'
-
+import resume from '../utils/myResume.pdf'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -157,7 +157,10 @@ const Home = () => {
         </p>
         <div className='btn-div'>
           <button onClick={()=> setside(!side)}>Connect with me</button>
+          <a href={resume} download="gmodetech resume">
           <button>my resume</button>
+          </a>
+          
         </div>
       </div>
       
